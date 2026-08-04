@@ -1,11 +1,10 @@
 # 🚀 Small VPS App Stack: Docker Compose + Caddy Reverse Proxy with Automated SSL, Monitoring & Log Analytics
 
-[![Docker](https://img.shields.io/badge/docker-containers-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-[![Caddy](https://img.shields.io/badge/caddy-reverse%20proxy-1F88C0?style=for-the-badge&logo=caddy&logoColor=white)](https://caddyserver.com/)
-[![PostgreSQL](https://img.shields.io/badge/postgresql-database-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![MinIO](https://img.shields.io/badge/minio-object%20storage-C72E49?style=for-the-badge&logo=minio&logoColor=white)](https://min.io/)
-[![Python](https://img.shields.io/badge/python-proxy-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=flat-square&logo=caddy&logoColor=white)](https://caddyserver.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white)](https://min.io/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 <details>
 <summary><strong>📑 Table of Contents (Click to expand)</strong></summary>
 
