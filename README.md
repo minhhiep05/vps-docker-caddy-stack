@@ -176,10 +176,10 @@ appstack/
 | **Reverse Proxy / TLS** | ![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=flat-square&logo=caddy&logoColor=white) | Automatic Let's Encrypt certificates, Basic Auth, per-domain access logs |
 | **Database** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) | Primary relational data store |
 | **Object Storage** | ![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white) | S3-compatible storage for the app |
-| **Monitoring** | ![Beszel](https://img.shields.io/badge/Beszel-monitoring-2E7D32?style=flat-square) | Real-time CPU / RAM / disk / Docker container metrics |
+| **Monitoring** | ![Beszel](https://img.shields.io/badge/Beszel-2E7D32?style=flat-square) | Real-time CPU / RAM / disk / Docker container metrics |
 | **Log Analytics** | ![GoAccess](https://img.shields.io/badge/GoAccess-E6522C?style=flat-square) | Static + periodic HTML traffic reports from Caddy access logs |
-| **Log Streaming** | ![Logdy](https://img.shields.io/badge/Logdy-live%20logs-6A1B9A?style=flat-square) | Real-time browser log tailing over WebSocket |
-| **Custom Tooling** | ![Python](https://img.shields.io/badge/Python-aiohttp-3776AB?style=flat-square&logo=python&logoColor=white) | Hand-written HTTP + WebSocket reverse proxy to patch a Logdy front-end bug |
+| **Log Streaming** | ![Logdy](https://img.shields.io/badge/Logdy-6A1B9A?style=flat-square) | Real-time browser log tailing over WebSocket |
+| **Custom Tooling** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | Hand-written HTTP + WebSocket reverse proxy to patch a Logdy front-end bug |
 
 ---
 
