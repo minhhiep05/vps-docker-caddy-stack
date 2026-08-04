@@ -5,6 +5,7 @@
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white)](https://min.io/)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+
 <details>
 <summary><strong>📑 Table of Contents (Click to expand)</strong></summary>
 
@@ -35,6 +36,8 @@
 This repository documents a complete small-scale application deployment on a single **VPS (2 vCPU / 4GB RAM / 60GB SSD)**, built entirely with **Docker Compose** — one independent `docker-compose.yml` per service, all connected through a shared Docker network and fronted by **Caddy** as a reverse proxy with fully automated **Let's Encrypt SSL**.
 
 The stack separates application containers (API, Frontend) from infrastructure containers (Proxy, Database, Object Storage, Monitoring, Logging), mirroring a production-style microservices layout while staying lightweight enough to run comfortably on a small VPS.
+
+> **Note:** The VPS used for this deployment has since been decommissioned to avoid ongoing hosting costs. All domains referenced below are no longer live — screenshots throughout this README were captured while the stack was running and serve as evidence of a working deployment.
 
 Beyond the happy path, this project documents several **real infrastructure incidents** encountered during deployment — a Let's Encrypt rate-limit lockout, a WebSocket "Mixed Content" bug behind HTTPS, and a Docker entrypoint conflict — each diagnosed and resolved from raw container logs.
 
@@ -177,7 +180,7 @@ appstack/
 
 <h2 id="vps-infrastructure">☁️ VPS Infrastructure</h2>
 
-| Domain | Service | Auth |
+| Domain (example) | Service | Auth |
 |---|---|---|
 | `api.yourdomain.com` | app-api | — |
 | `www.yourdomain.com` | frontend (Python/Flask) | — |
@@ -185,7 +188,7 @@ appstack/
 | `viewlogs.yourdomain.com` | Logdy (real-time log tail) | Basic Auth |
 | `accesslog.yourdomain.com` | GoAccess dashboard | Basic Auth |
 
-DNS: 5 `A` records point directly at the VPS public IP. Caddy handles certificate issuance per-domain automatically on first request.
+DNS: 5 `A` records point directly at the VPS public IP. Caddy handles certificate issuance per-domain automatically on first request. *(This lab's VPS has since been torn down — see the screenshots below for evidence of the working deployment.)*
 
 ---
 
