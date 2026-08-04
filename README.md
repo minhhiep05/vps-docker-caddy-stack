@@ -10,6 +10,7 @@
 [![GoAccess](https://img.shields.io/badge/GoAccess-E6522C?style=for-the-badge)](https://goaccess.io/)
 [![Logdy](https://img.shields.io/badge/Logdy-6A1B9A?style=for-the-badge)](https://logdy.dev/)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+
 <details>
 <summary><strong>📑 Table of Contents (Click to expand)</strong></summary>
 
