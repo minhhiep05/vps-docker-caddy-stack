@@ -1,5 +1,6 @@
 # 🚀 Small VPS App Stack: Docker Compose + Caddy Reverse Proxy with Automated SSL, Monitoring & Log Analytics
 
+[![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=for-the-badge&logo=caddy&logoColor=white)](https://caddyserver.com/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
@@ -165,6 +166,7 @@ appstack/
 
 | Component | Technology / Badge | Description |
 |---|---|---|
+| **Cloud Provider** | ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white) | EC2 instance hosting the entire stack |
 | **Hosting** | ![Linux](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white) | Single small VPS (2 vCPU / 4GB RAM / 60GB SSD) |
 | **Containerization** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) | 9 independently composed services on a shared network |
 | **Reverse Proxy / TLS** | ![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=flat-square&logo=caddy&logoColor=white) | Automatic Let's Encrypt certificates, Basic Auth, per-domain access logs |
