@@ -1,0 +1,25 @@
+services:
+  goaccess:
+    image: allinurl/goaccess
+    container_name: goaccess
+    restart: unless-stopped
+    volumes:
+      - ../proxy-caddy/logs:/var/log/caddy:ro
+      - ./goaccess-data:/report
+    entrypoint: ["/bin/sh", "-c"]
+    command: ["while true; do goaccess /var/log/caddy/api-access.log -o /report/index.html --log-format=CADDY -a; sleep 60; done"]
+    networks:
+      - proxy-net
+ 
+  goaccess-web:
+    image: nginx:alpine
+    container_name: goaccess-web
+    restart: unless-stopped
+    volumes:
+      - ./goaccess-data:/usr/share/nginx/html:ro
+    networks:
+      - proxy-net
+ 
+networks:
+  proxy-net:
+    external: true 

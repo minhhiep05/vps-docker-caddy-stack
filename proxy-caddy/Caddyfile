@@ -1,0 +1,36 @@
+# ---- API ----
+api.devopshiep.shop {
+	reverse_proxy app-api:80
+	log {
+		output file /var/log/caddy/api-access.log
+	}
+}
+
+# ---- Frontend ----
+devopshiep.shop, www.devopshiep.shop {
+	reverse_proxy frontend:5000
+	log {
+		output file /var/log/caddy/frontend-access.log
+	}
+}
+
+# ---- Monitor (Beszel co login rieng, khong can basic_auth) ----
+monitor.devopshiep.shop {
+	reverse_proxy beszel:8090
+}
+
+# ---- Xem access log (logdy) - chua co login -> basic_auth ----
+viewlogs.devopshiep.shop {
+	basic_auth {
+		admin $2a$14$SnoxNXOWS16AzTuv55frx.HSGdKbL7JromPEj8LfOke11/WCIrJIu
+	}
+	reverse_proxy logdy:8080
+}
+
+# ---- Thong ke access log (goaccess) - chua co login -> basic_auth ----
+accesslog.devopshiep.shop {
+	basic_auth {
+		admin $2a$14$SnoxNXOWS16AzTuv55frx.HSGdKbL7JromPEj8LfOke11/WCIrJIu
+	}
+	reverse_proxy goaccess-web:80
+}
