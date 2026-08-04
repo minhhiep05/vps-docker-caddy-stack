@@ -1,10 +1,14 @@
 # 🚀 Small VPS App Stack: Docker Compose + Caddy Reverse Proxy with Automated SSL, Monitoring & Log Analytics
 
 [![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=for-the-badge&logo=caddy&logoColor=white)](https://caddyserver.com/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=for-the-badge&logo=minio&logoColor=white)](https://min.io/)
+[![Beszel](https://img.shields.io/badge/Beszel-2E7D32?style=for-the-badge)](https://beszel.dev/)
+[![GoAccess](https://img.shields.io/badge/GoAccess-E6522C?style=for-the-badge)](https://goaccess.io/)
+[![Logdy](https://img.shields.io/badge/Logdy-6A1B9A?style=for-the-badge)](https://logdy.dev/)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 <details>
 <summary><strong>📑 Table of Contents (Click to expand)</strong></summary>
